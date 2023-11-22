@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const BasketballPointsCounterApp());
+  runApp(BasketballPointsCounterApp());
 }
 
 class BasketballPointsCounterApp extends StatelessWidget {
-  const BasketballPointsCounterApp({super.key});
+  //const BasketballPointsCounterApp({super.key});
+  
+  int teamAPoints = 0;
+  int teamBPoints = 0;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) {    
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
@@ -33,9 +36,9 @@ class BasketballPointsCounterApp extends StatelessWidget {
                           fontSize: 32,
                         ),
                       ),
-                      const Text(
-                        '0',
-                        style: TextStyle(
+                      Text(
+                        '$teamAPoints',
+                        style: const TextStyle(
                           fontSize: 150,
                         ),
                       ),
@@ -101,9 +104,9 @@ class BasketballPointsCounterApp extends StatelessWidget {
                           fontSize: 32,
                         ),
                       ),
-                      const Text(
-                        '0',
-                        style: TextStyle(
+                      Text(
+                        '$teamBPoints',
+                        style: const TextStyle(
                           fontSize: 150,
                         ),
                       ),
