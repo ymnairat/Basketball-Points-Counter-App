@@ -16,18 +16,57 @@ class BasketballPointsCounterApp extends StatelessWidget {
           backgroundColor: Colors.orange,
           title: const Text('Points Counter'),
         ),
-        body: const Column(
+        body: Column(
           children: [
-            Text(
+            const Text(
               'Team A',
               style: TextStyle(
                 fontSize: 32,
               ),
             ),
-            Text(
+            const Text(
               '0',
               style: TextStyle(
                 fontSize: 150,
+              ),
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.orange,
+                  minimumSize: const Size(150, 50)),
+              onPressed: () {},
+              child: const Text(
+                'Add 1 Point',
+                style: TextStyle(
+                  fontSize: 18,
+                  color: Colors.black,
+                ),
+              ),
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.orange,
+                  minimumSize: const Size(150, 50)),
+              onPressed: () {},
+              child: const Text(
+                'Add 1 Point',
+                style: TextStyle(
+                  fontSize: 18,
+                  color: Colors.black,
+                ),
+              ),
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.orange,
+                  minimumSize: const Size(150, 50)),
+              onPressed: () {},
+              child: const Text(
+                'Add 1 Point',
+                style: TextStyle(
+                  fontSize: 18,
+                  color: Colors.black,
+                ),
               ),
             ),
           ],
